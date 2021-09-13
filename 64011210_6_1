@@ -1,0 +1,32 @@
+#include<stdio.h>
+
+int main () {
+	int a;
+	printf("Enter Number : ");
+	scanf("%d",&a);
+	
+	int n , b, c;
+	
+	for(n=1; n<=a; n++)
+	{	b = (2*a-1)-2*(n-1);
+		for (c=1; c<=n-1; c++){printf(" ");}
+		while (b>=1)
+		{   
+			printf("*");
+			b--;
+		}
+		printf("\n");
+	}
+	
+	for(n=1; n<=a-1; n++)
+	{	b = 3+2*(n-1);
+		for (c=1; c<=a-2-(n-1); c++){printf(" ");}
+		while (b>=1)
+		{   
+			printf("*");
+			b--;
+		}
+		printf("\n");
+	}
+	return 0;
+}
